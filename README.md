@@ -1,6 +1,6 @@
 ![agents.json](https://github.com/lando22/agents.json/blob/main/cover.png)
 
-# agents.json - Creating the web framework for the future of autonomous agents
+# agents.json - A web framework for the future of autonomous agents
 
 ## Overview
 `agents.json` is a structured configuration file designed to facilitate the future framework for autonomous AI agents in navigating and interacting with specific web interfaces. It acts as a guide, providing detailed instructions for agents on interacting with different elements of a web page, enabling them to perform tasks autonomously.
