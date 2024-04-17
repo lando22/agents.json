@@ -14,7 +14,7 @@ The `agents.json` file outlines the interactions available on various pages of a
 ## File Structure
 The structure of `agents.json` is defined in JSON format, making it easy to read both by machines and humans. Here is an example of how the `agents.json` might be structured for a hypothetical book store website:
 
-json
+```json
 {
   "apiVersion": "1.0",
   "baseUrl": "https://www.fake-bookstore.com", 
@@ -62,6 +62,7 @@ json
     }
   }
 }
+```
 
 ## Key Components
 
