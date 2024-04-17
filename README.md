@@ -1,3 +1,5 @@
+![agents.json](https://github.com/lando22/agents.json/blob/main/cover.png)
+
 # agents.json - Creating the web framework for the future of autonomous agents
 
 ## Overview
