@@ -74,6 +74,7 @@ The structure of `agents.json` is defined in JSON format, making it easy to read
 ## Usage Scenario
 Imagine an general purpose autonomous AI agent designed to assist users with various tasks. Say a user would like to purchase a book using their AI agent from the site `fake-bookstore.com` By accessing "fake bookstores" `agents.json` file, the agent can autonomously navigate the bookstore website, search for books based on user preferences, add books to the cart, and handle the checkout process. This allows the user to let it's AI agent to carry out the task and the bookstore business to easily prepare it's website for the future of AI agents by adding just one file to it's site.
 
+f
 ## Demo with a sample agent
 Building an AI agent is ultimately up to the creator and this is not a one-size-fits-all as `agents.json` can be used in lots ways with different models, web automation frameworks etc.
 
@@ -83,10 +84,10 @@ For this demo, we will be using:
 2. Selenium to operate our sample website
 3. Our sample agents.json file for our website to make it accessible to agents.
 
-# Step 1: Load the sample website
+## Step 1: Load the sample website
 You can load the sample website with Replit here. Please note, this is not the prettiest website or very complex, it is just meant to give users an idea of how a site with agents.json could work.
 
-# Step 2: Create our AI agent to interact with the demo site
+## Step 2: Create our AI agent to interact with the demo site
 Next, we will use the OpenAI API to define our agent to make a plan based on the users request. Our user request will ask our agent to search for a book, select it and add it to a cart.
 
 Here is the OpenAI API code in Python to create a step by step plan:
@@ -228,7 +229,7 @@ Which will output something along the lines of:
       {
         "description": "Navigate to the search page",
         "action": "navigate",
-        "url": "https://701472d9-f827-446b-a988-bf59f5d18209-00-2qszlnt06a4lk.janeway.replit.dev"
+        "url": "https://<your url>.replit.dev"
       },
       {
         "description": "Enter 'Shakespeare' into the search box",
@@ -254,7 +255,7 @@ Which will output something along the lines of:
       {
         "description": "Go to the cart page",
         "action": "navigate",
-        "url": "https://701472d9-f827-446b-a988-bf59f5d18209-00-2qszlnt06a4lk.janeway.replit.dev/cart"
+        "url": "https://your-url/cart"
       },
       {
         "description": "Proceed to checkout",
@@ -265,7 +266,7 @@ Which will output something along the lines of:
   }
 ```
 
-# Step 3: Carry out site interaction with Selenium
+## Step 3: Carry out site interaction with Selenium
 To carry out the task fully autonomously, you can use the following script:
 
 ```python
