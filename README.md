@@ -1,4 +1,4 @@
-# Agents.json Configuration
+# agents.json - Creating the web framework for the future of autonomous agents
 
 ## Overview
 `agents.json` is a structured configuration file designed to facilitate the future framework for autonomous AI agents in navigating and interacting with specific web interfaces. It acts as a guide, providing detailed instructions for agents on how to interact with different elements of a web page, enabling them to perform tasks autonomously.
