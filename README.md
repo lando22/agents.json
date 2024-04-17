@@ -4,7 +4,7 @@
 `agents.json` is a structured configuration file designed to facilitate the future framework for autonomous AI agents in navigating and interacting with specific web interfaces. It acts as a guide, providing detailed instructions for agents on interacting with different elements of a web page, enabling them to perform tasks autonomously.
 
 ## Purpose
-Looking ahead, AI models are slowly showing agentic behaviour, and more work is being put into making semi-autonomous systems/fully autonomous systems. However, the current state of websites and web platforms are built for humans to interact with and not AI agents. Lots of research has been put into UI understanding with multi-modal models, but such methods can be brittle and expensive.
+Looking ahead, AI models are slowly showing agentic behavior, and more work is being put into making semi-autonomous systems/fully autonomous systems. However, the current state of websites and web platforms are built for humans to interact with and not AI agents. Lots of research has been put into UI understanding with multi-modal models, but such methods can be brittle and expensive.
 
 The purpose of `agents.json` is to provide a clear and standardized description of UI interactions on a website that autonomous agents can follow. This file is crucial for enabling AI-driven models to understand and execute web-based tasks effectively, such as searching, navigating, or processing transactions on behalf of a user. You can think of `agents.json` as similar to how `robots.txt` instructs search engines to crawl your site; `agents.json` instructs autonomous agents how to use your site!
 
@@ -72,25 +72,25 @@ The structure of `agents.json` is defined in JSON format, making it easy to read
 - **uiInteractions**: Specifies the actionable elements within each page, including selectors, descriptions, and instructions tailored for AI agents. These should be things that an agent could interact with.
 
 ## Usage Scenario
-Imagine an general purpose autonomous AI agent designed to assist users with various tasks. Say a user would like to purchase a book using their AI agent from the site `fake-bookstore.com` By accessing "fake bookstores" `agents.json` file, the agent can autonomously navigate the bookstore website, search for books based on user preferences, add books to the cart, and handle the checkout process. This allows the user to let it's AI agent to carry out the task and the bookstore business to easily prepare it's website for the future of AI agents by adding just one file to it's site.
+Imagine a general-purpose autonomous AI agent designed to assist users with various tasks. Say a user would like to purchase a book using their AI agent from the site `fake-bookstore.com` By accessing "fake bookstores" `agents.json` file, the agent can autonomously navigate the bookstore website, search for books based on user preferences, add books to the cart, and handle the checkout process. This allows the user to let it's AI agent to carry out the task and the bookstore business to easily prepare its website for the future of AI agents by adding just one file to its site.
 
 f
 ## Demo with a sample agent
-Building an AI agent is ultimately up to the creator and this is not a one-size-fits-all as `agents.json` can be used in lots ways with different models, web automation frameworks etc.
+Building an AI agent is ultimately up to the creator and this is not a one-size-fits-all as `agents.json` can be used in lots of ways with different models, web automation frameworks, etc.
 
 For this demo, we will be using:
 
-1. GPT.3.5-Turbo-0125 on the OpenAI API for our model. This will be used to read our agents.json file and generate a step by step action plan based on a user command.
+1. GPT.3.5-Turbo-0125 on the OpenAI API for our model. This will be used to read our agents.json file and generate a step-by-step action plan based on a user command.
 2. Selenium to operate our sample website
 3. Our sample agents.json file for our website to make it accessible to agents.
 
 ## Step 1: Load the sample website
-You can load the sample website with Replit here. Please note, this is not the prettiest website or very complex, it is just meant to give users an idea of how a site with agents.json could work.
+You can load the sample website with Replit [Link here](https://replit.com/@landolando12/Agentsjson-test-site). Please note, that this is not the prettiest website or very complex, it is just meant to give users an idea of how a site with agents.json could work.
 
 ## Step 2: Create our AI agent to interact with the demo site
 Next, we will use the OpenAI API to define our agent to make a plan based on the users request. Our user request will ask our agent to search for a book, select it and add it to a cart.
 
-Here is the OpenAI API code in Python to create a step by step plan:
+Here is the OpenAI API code in Python to create a step-by-step plan:
 
 
 ```python
@@ -194,7 +194,7 @@ with open("agents.json", "w") as f:
   f.write(agents_file.json())
 
 
-# use OpenAI agent to create a plan to carry out the user request and read the sites agents.json, which inlcudes instructions for how to navigate the site
+# use OpenAI agent to create a plan to carry out the user request and read the site agents.json, which includes instructions for how to navigate the site
 response = client.chat.completions.create(
   model="gpt-3.5-turbo-0125",
   messages=[
